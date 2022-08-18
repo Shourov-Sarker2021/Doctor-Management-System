@@ -35,7 +35,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Email</strong>
-                    <input type="text" name="email" class="form-control" placeholder="Email">
+                    <input type="text" name="email" class="form-control" value="{{$doctor->email}}" placeholder="Email">
 
                 </div>
             </div>
@@ -44,7 +44,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Phone</strong>
-                    <input type="text" name="phone" class="form-control" placeholder="Phone">
+                    <input type="text" name="phone" class="form-control" value="{{$doctor->phone}}" placeholder="Phone">
 
                 </div>
             </div>
@@ -53,7 +53,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Education</strong>
-                    <input type="text" name="education" class="form-control" placeholder="Education">
+                    <input type="text" name="education" class="form-control" value="{{$doctor->education}}" placeholder="Education">
 
                 </div>
             </div>
@@ -62,7 +62,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Specialist</strong>
-                    <input type="text" name="specialist" class="form-control" placeholder="Specialist">
+                    <input type="text" name="specialist" class="form-control" value="{{$doctor->specialist}}" placeholder="Specialist">
 
                 </div>
             </div>
@@ -71,7 +71,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Experence</strong>
-                    <input type="text" name="experence" class="form-control" placeholder="Experence">
+                    <input type="text" name="experence" class="form-control" value="{{$doctor->experence}}" placeholder="Experence">
 
                 </div>
             </div>
@@ -82,7 +82,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Detail</strong>
-                    <textarea class="form-control" style="height: 150px;" name="detail" placeholder="Detail">{{$doctor->detail}}</textarea>
+                    <textarea class="form-control" style="height: 150px;" name="detail"  placeholder="Detail">{{$doctor->detail}}</textarea>
                 </div>
             </div>  
 
