@@ -473,16 +473,19 @@
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active ps-0" id="home-tab" data-bs-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Total Doctor's</a>
+                      <a class="nav-link active ps-0" href="{{route('doctors.index')}}">Total Doctor's</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false">Apointment Request</a>
+                      <a class="nav-link"  href="{{route('apointments.create')}}">Apointment Request</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#demographics" role="tab" aria-selected="false">Total Patient</a>
+                      <a class="nav-link"  href="{{route('apointments.index')}}">Total Apointment</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#demographics" role="tab" aria-selected="false">Total Prescreaption</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border-0" id="more-tab" data-bs-toggle="tab" href="#more" role="tab" aria-selected="false">Total Patient</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link border-0" id="more-tab" data-bs-toggle="tab" href="#more" role="tab" aria-selected="false">More</a>

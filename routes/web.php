@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\ApointmentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\DoctorController;
+
 
 Route::resource('doctors',DoctorController::class);
+Route::resource('apointments',ApointmentController::class);
 
 Route::get('/', function () {
     return view('welcome');
