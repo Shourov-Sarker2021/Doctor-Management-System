@@ -81,7 +81,14 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Doctor Name</strong>
-                    <input type="text" name="doctor_name" class="form-control" placeholder="Doctor Name" value="{{$apointment->doctor_name}}">
+
+                   <!-- <input type="text" name="doctor_name" class="form-control" placeholder="Doctor Name" value="{{$apointment->doctor_name}}"> -->
+
+                      <select class="form-select" aria-label="Default select example">
+                      <option selected>Select Doctor Name</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
 
                 </div>
             </div>
