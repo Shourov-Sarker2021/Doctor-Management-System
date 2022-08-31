@@ -3,8 +3,8 @@
     <div class="row" style="margin-top: 20px;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-right">
-        <a class="btn btn-primary" style="text-align:center; margin-left: 500px;">NEW APOINTMENT CREATE FORM.</a>
-    </div>
+                 <a class="btn btn-primary" style="text-align:center; margin-left: 500px;">NEW APOINTMENT CREATE FORM.</a>
+            </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="http://127.0.0.1:8000/dashboard">BACK TO DASHBOARD</a>
             </div>
@@ -19,9 +19,9 @@
             @endforeach
         </div>
     @endif 
-    <form action="{{route('apointments.store')}}" method="POST" enctype="multipart/form-data" style="margin-top:20px;">
+<form action="{{route('apointments.store')}}" method="POST" enctype="multipart/form-data" style="margin-top:20px;">
         @csrf
-        
+    <div>    
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
@@ -30,17 +30,19 @@
 
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+        </div> 
+           
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Phone</strong>
                     <input type="text" name="phone" class="form-control" placeholder="Phone">
 
                 </div>
-                </div>
-            </div>    
-            <div class="row">
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Address</strong>
@@ -48,8 +50,9 @@
 
                 </div>
             </div>
+        </div>    
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Age</strong>
@@ -57,42 +60,44 @@
 
                 </div>
             </div>
+        </div>    
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Apointment Date</strong>
-                    <input type="text" name="apointment_date" class="form-control" placeholder="Apointment Date">
-
-                </div>
+                   <input type="text" name="apointment_date" class="form-control" placeholder="Apointment Date" id="datepicker">
+                 </div>
             </div>
+        </div>    
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Apointment Time</strong>
-                    <input type="text" name="apointment_time" class="form-control" placeholder="Apointment Time">
+                   <input type="text" name="apointment_time" class="form-control" placeholder="Apointment Time">
 
                 </div>
             </div>
+        </div>    
 
             <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="from-group">
-                    <strong>Doctor Name</strong>
-                     
-                     <input type="text" name="doctor_name" class="form-control" placeholder="Doctor_Name"> 
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="from-group">
+                        <strong>Doctor Name</strong>
+                         
+                        <!-- <input type="text" name="doctor_name" class="form-control" placeholder="Doctor_Name"> --> 
 
-                    <!-- <select class="form-select" aria-label="Default select example">
-                      <option selected>Select Doctor Name</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select> -->
+                         <select class="form-select" aria-label="Default select example">
+                          <option selected>Select Doctor Name</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
 
+                    </div>
                 </div>
             </div>
-            
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
@@ -111,8 +116,8 @@
             
              
 
-        </div>
-
+    </div>
+</form>
 
 @endsection
 

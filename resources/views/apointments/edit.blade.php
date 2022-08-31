@@ -19,7 +19,7 @@
             @endforeach
         </div>
     @endif 
-    <form action="{{ route('apointments.update',$apointment->id) }}" method="POST" enctype="multipart/form-data" style="margin-top:20px;">
+    <form action="{{ route('apointments.update',$apointment->id) }}" method="POST" enctype="multipart/form-data"     style="margin-top:20px;">
         @csrf
         @method('PUT')
 
@@ -31,8 +31,9 @@
 
                 </div>
             </div>
+        </div> 
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Phone</strong>
@@ -40,8 +41,9 @@
 
                 </div>
             </div>
+        </div>
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Address</strong>
@@ -49,8 +51,9 @@
 
                 </div>
             </div>
+        </div>    
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Age</strong>
@@ -58,17 +61,19 @@
 
                 </div>
             </div>
+        </div>    
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Apointment Date</strong>
-                    <input type="text" name="apointment_date" class="form-control" placeholder="Apointment Date" value="{{$apointment->apointment_date}}">
+                    <input type="text" id="datepicker" name="apointment_date" class="form-control" placeholder="Apointment Date" value="{{$apointment->apointment_date}}">
 
                 </div>
             </div>
+        </div>    
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Apointment Time</strong>
@@ -76,8 +81,9 @@
 
                 </div>
             </div>
+        </div>    
 
-            <div class="row">
+        <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">
                     <strong>Doctor Name</strong>
@@ -86,13 +92,13 @@
 
                       <select class="form-select" aria-label="Default select example">
                       <option selected>Select Doctor Name</option>
-                      <option value="1">One</option>
+                      <option value="$doctor->name">Name</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
 
                 </div>
             </div>
-            
+        </div>    
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="from-group">

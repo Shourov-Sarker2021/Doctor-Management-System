@@ -28,7 +28,7 @@
     </div>
 @endif
 
-<table class="table table-bordered" style="margin-top:30px;">
+<table class="table table-border" style="margin-top:30px; background-color:greenyellow;">
     <tr>
         <th>No.</th>
         <th>Name</th>
