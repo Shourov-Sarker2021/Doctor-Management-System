@@ -1,16 +1,24 @@
 @extends("apointments.layout")
 @section('content')
 <div class="row" style="margin-top:20px;">
+
+    <div style="col-lg-12 margin-tb; text-align: center; ">
+        <a class="btn btn-primary">ALL APOINTMENT LIST.</a>
+    </div>
    
     <div class="pull-right">
         <a class="btn btn-success" href="{{ route('apointments.create')}}">
-            Add New Apointment.
+            ADD NEW APOINTMENT.
         </a>
     </div>
 
-     <div style="col-lg-12 margin-tb; margin-top: 30px; ">
-        <a class="btn btn-primary">All Apointment List.</a>
+    <div class="pull-right">
+        <a class="btn btn-success" style="margin-top: 10px;" href="http://127.0.0.1:8000/dashboard">
+            BACK TO DASHBOARD.
+        </a>
     </div>
+
+     
 </div>
 <br>
 

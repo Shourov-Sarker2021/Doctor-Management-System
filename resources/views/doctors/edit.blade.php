@@ -2,11 +2,11 @@
 @section('content')
     <div class="row" style="margin-top: 20px;">
         <div class="col-lg-12 margin-tb">
-            <div class="text-align: center;">
-                <h4>Edit Doctor</h4>
+            <div class="pull-right">
+                <a class="btn btn-primary" style="text-align:center; margin-left: 500px;">DOCTORS INFORMATION EDIT FORM </a>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{route('doctors.index')}}">Back</a>
+                <a class="btn btn-primary" href="{{route('doctors.index')}}">BACK</a>
             </div>
         </div>    
     </div>
@@ -99,7 +99,7 @@
             </div>
             
             <div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:20px;">
-                <button type="Submit" class="btn btn-primary">Update Information</button>
+                <button type="Submit" class="btn btn-primary" style="margin-left: 500px;">UPDATE INFORMATION</button>
             </div>
             
              
