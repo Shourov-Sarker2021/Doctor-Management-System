@@ -92,7 +92,7 @@
 
                       <select class="form-select" aria-label="Default select example">
                       <option selected>Select Doctor Name</option>
-                      <option value="$doctor->name">Name</option>
+                      <option value="$doctor->name"></option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
 
